@@ -1,0 +1,384 @@
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Portfoliotailwind
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;family=Raleway:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    .bg-salem {
+      background-color: #0a7f86;
+    }
+    .text-salem {
+      color: #0a7f86;
+    }
+    .bg-kidnapper {
+      background-color: #ffefd5;
+    }
+    .text-kidnapper {
+      color: #ffefd5;
+    }
+    .bg-model {
+      background-color: #0c383b;
+    }
+    .text-model {
+      color: #0c383b;
+    }
+    *, ::after, ::before {
+    box-sizing: initial;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    }
+  </style>
+ </head>
+ <body class="text-black-800">
+  <header class="bg-kidnapper shadow">
+   <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <div>
+     <a class="text-xl font-bold text-salem" href="#">
+      Mon Portfolio
+     </a>
+    </div>
+    <div class="block md:hidden">
+     <button class="text-gray-800 focus:outline-none" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+     </button>
+    </div>
+    <nav class="hidden md:flex space-x-6" id="menu">
+     <a class="text-gray-800 hover:text-salem font-semibold" href="#vision">
+      Vision
+     </a>
+     <a class="text-gray-800 hover:text-salem font-semibold" href="#realisations">
+      Réalisations
+     </a>
+     <a class="text-gray-800 hover:text-salem font-semibold" href="#cv">
+      CV
+     </a>
+     <a class="text-gray-800 hover:text-salem font-semibold" href="#blog">
+      Blog
+     </a>
+     <a class="text-gray-800 hover:text-salem font-semibold" href="#contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+   <div class="md:hidden" id="mobile-menu" style="display: none;">
+    <nav class="px-2 pt-2 pb-4 space-y-1 text-center">
+        <a class="block text-gray-800 hover:text-salem font-bold" href="#vision">Vision</a>
+        <a class="block text-gray-800 hover:text-salem font-bold" href="#realisations">Réalisations</a>
+        <a class="block text-gray-800 hover:text-salem font-bold" href="#cv">CV</a>
+        <a class="block text-gray-800 hover:text-salem font-bold" href="#blog">Blog</a>
+        <a class="block text-gray-800 hover:text-salem font-bold" href="#contact">Contact</a>
+    </nav>
+</div>
+  </header>
+  <main class="container mx-auto px-6 py-8" style="background-image: url('images/fondpage1.jpg'); background-size: contain; background-position: center;">
+   <section class="my-9" id="description">
+    <div class="flex flex-col md:flex-row items-center">
+     <img alt="Portrait professionnel d'un développeur web souriant, portant une chemise et des lunettes" class="w-48 h-48 object-cover rounded-full mb-4 md:mb-0 md:mr-6" height="200" src="https://storage.googleapis.com/a1aa/image/z7SGWiqq9LrAD1f8gVvKOvMMvMMmctgoyfI1hDHa3mQf2ionA.jpg" width="200"/>
+     <div>
+      <h2 class="text-3xl font-bold mb-2 fade-in text-salem">
+       Bonjour, je suis [Daniel COULIBALY]
+      </h2>
+      <p>
+       Passionné par le développement web et mobile, je crée des solutions technologiques innovantes et intuitives. Avec une expérience solide dans le développement de sites web et d'applications, je m'efforce de toujours offrir des produits de haute qualité qui répondent aux besoins des utilisateurs.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="my-8" id="vision">
+    <h2 class="text-3xl font-bold mb-4 text-salem">
+     Ma Vision
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <p>
+      Je crois en l'importance de créer des solutions technologiques qui non seulement répondent aux besoins des utilisateurs, mais qui sont également intuitives et agréables à utiliser. Mon objectif est de continuer à apprendre et à m'adapter aux nouvelles technologies pour offrir des produits de haute qualité. Je suis passionné par le développement web et mobile, et je m'efforce de toujours améliorer mes compétences et de rester à jour avec les dernières tendances de l'industrie.
+     </p>
+    </div>
+   </section>
+   <section class="my-8" id="realisations">
+    <h2 class="text-3xl font-bold mb-4 text-salem">
+     Mes Réalisations
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Capture d'écran d'un site web de commerce électronique avec une interface utilisateur moderne et épurée" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/H6T2RPZX4fwZHqCfQZOONe57Rai5UsL5qf9FFeR1DLz6aLieE.jpg" width="600"/>
+      <h3 class="text-xl font-semibold mb-2 text-salem">
+       Projet E-commerce
+      </h3>
+      <p>
+       Développement d'un site de commerce électronique avec une interface utilisateur moderne et épurée.
+      </p>
+      <a class="text-salem hover:underline" href="#">
+       Voir plus
+      </a>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Capture d'écran d'une application mobile de gestion de tâches avec une interface intuitive" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/IhlkIuYEw2qCLxAlWB19tuMPdHWVSTef8FEsci9Lexl62ionA.jpg" width="600"/>
+      <h3 class="text-xl font-semibold mb-2 text-salem">
+       Application de Gestion de Tâches
+      </h3>
+      <p>
+       Création d'une application mobile pour la gestion des tâches quotidiennes avec une interface intuitive.
+      </p>
+      <a class="text-salem hover:underline" href="#">
+       Voir plus
+      </a>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Capture d'écran d'un tableau de bord analytique avec des graphiques interactifs" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/2PNdgA6DmQKLNVIl8yPByx5q86tt2tEheh3Tnq8VRdGrtI6JA.jpg" width="600"/>
+      <h3 class="text-xl font-semibold mb-2 text-salem">
+       Tableau de Bord Analytique
+      </h3>
+      <p>
+       Développement d'un tableau de bord analytique avec des graphiques interactifs pour la visualisation des données.
+      </p>
+      <a class="text-salem hover:underline" href="#">
+       Voir plus
+      </a>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Capture d'écran d'un site web de portfolio avec une mise en page élégante et des animations" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/ZIflnrcSBAygRChut4YFa6mDqisFy9Scd1HRgk6LqjbqtI6JA.jpg" width="600"/>
+      <h3 class="text-xl font-semibold mb-2 text-salem">
+       Site Web de Portfolio
+      </h3>
+      <p>
+       Création d'un site web de portfolio avec une mise en page élégante et des animations pour présenter des projets personnels.
+      </p>
+      <a class="text-salem hover:underline" href="#">
+       Voir plus
+      </a>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Capture d'écran d'une application de suivi de fitness avec des graphiques de progression et des plans d'entraînement personnalisés" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/IDUCeG0bRp2fhE2sBUljnfYp5MUfbfpDIPdODJ1w5I1hbLieE.jpg" width="600"/>
+      <h3 class="text-xl font-semibold mb-2 text-salem">
+       Application de Suivi de Fitness
+      </h3>
+      <p>
+       Développement d'une application de suivi de fitness avec des graphiques de progression et des plans d'entraînement personnalisés.
+      </p>
+      <a class="text-salem hover:underline" href="#">
+       Voir plus
+      </a>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Capture d'écran d'un site web de blog avec une interface utilisateur propre et des fonctionnalités de gestion de contenu" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/KbU9b0MNt0bTOp42zd0SAmQKhGQjttvZAqkJLgLDpeMvtI6JA.jpg" width="600"/>
+      <h3 class="text-xl font-semibold mb-2 text-salem">
+       Site Web de Blog
+      </h3>
+      <p>
+       Création d'un site web de blog avec une interface utilisateur propre et des fonctionnalités de gestion de contenu pour les blogueurs.
+      </p>
+      <a class="text-salem hover:underline" href="#">
+       Voir plus
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="my-8" id="cv">
+    <h2 class="text-3xl font-bold mb-4 text-salem">
+     CV
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <h3 class="text-2xl font-semibold mb-2 text-salem">
+      Expérience Professionnelle
+     </h3>
+     <ul class="list-disc list-inside">
+      <li class="mb-2">
+       <strong>
+        Développeur Web
+       </strong>
+       chez
+       <em>
+        Entreprise XYZ
+       </em>
+       (2020 - Présent)
+       <p>
+        Développement de sites web et applications web en utilisant les technologies modernes.
+       </p>
+      </li>
+      <li class="mb-2">
+       <strong>
+        Stagiaire Développeur
+       </strong>
+       chez
+       <em>
+        Entreprise ABC
+       </em>
+       (2019 - 2020)
+       <p>
+        Participation à divers projets de développement web et maintenance de sites existants.
+       </p>
+      </li>
+     </ul>
+     <h3 class="text-2xl font-semibold mb-2 mt-4 text-salem">
+      Éducation
+     </h3>
+     <ul class="list-disc list-inside">
+      <li class="mb-2">
+       <strong>
+        Master en Informatique
+       </strong>
+       - Université de Technologie (2018 - 2020)
+      </li>
+      <li class="mb-2">
+       <strong>
+        Licence en Informatique
+       </strong>
+       - Université de Technologie (2015 - 2018)
+      </li>
+     </ul>
+     <h3 class="text-2xl font-semibold mb-2 mt-4 text-salem">
+      Compétences
+     </h3>
+     <ul class="list-disc list-inside">
+      <li class="mb-2">
+       Développement Web: HTML, CSS, JavaScript, React, Vue.js
+      </li>
+      <li class="mb-2">
+       Développement Mobile: Flutter, React Native
+      </li>
+      <li class="mb-2">
+       Backend: Node.js, Express, Django
+      </li>
+      <li class="mb-2">
+       Bases de Données: MongoDB, MySQL, PostgreSQL
+      </li>
+      <li class="mb-2">
+       Outils: Git, Docker, Jenkins
+      </li>
+     </ul>
+    </div>
+   </section>
+   <section class="my-8" id="blog">
+    <h2 class="text-3xl font-bold mb-4 text-salem">
+     Blog
+    </h2>
+    <div class="grid lg:grid-cols-1 lg:grid-cols-2 lg:grid-cols-3 gap-3">  
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="container mx-auto max-w-sm bg-white rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transform transition-all duration-500">
+      <img alt="Image d'illustration pour un article de blog sur les dernières tendances en développement web" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/UlsiSDmMc3asIxhSap926nLnEmotxd2aQS5VzgmrnlY2WE9E.jpg" width="600"/>
+      <div class="p-6">
+        <h1 class="text-2xl font-bold text-gray-800 cursor-pointer ">Les Dernières Tendances en Développement Web</h1>
+        <p class="text-lg text-gray-500 font font-normal">Découvrez les dernières tendances et technologies qui façonnent le monde du développement web en 2024.</p>
+        <a class="text-salem font-semibold hover:underline" href="#">
+       Lire plus
+      </a>
+      </div>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="container mx-auto max-w-sm bg-white rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transform transition-all duration-500">
+      <img alt="Image d'illustration pour un article de blog sur les meilleures pratiques en développement mobile" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/7XuyJutt68YJMpfW9mXZWrte1ie9ywT5a8q9cKEhAelptFRPB.jpg" width="600"/>
+      <div class="p-6">
+        <h1 class="text-2xl font-bold text-gray-800 cursor-pointer ">Meilleures Pratiques en Développement Mobile</h1>
+        <p class="text-lg text-gray-500 font font-normal">Apprenez les meilleures pratiques pour développer des applications mobiles performantes et intuitives.</p>
+        <a class="text-salem font-semibold hover:underline" href="#">
+       Lire plus
+      </a>
+      </div>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="container mx-auto max-w-sm bg-white rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transform transition-all duration-500">
+      <img alt="Image d'illustration pour un article de blog sur l'importance de la sécurité web" class="w-full h-40 object-cover mb-4 rounded" height="400" src="https://storage.googleapis.com/a1aa/image/iGdFN212FXZxBdBvEOkCguhGjQhRaze3lG5iQN3YnbxqtI6JA.jpg" width="600"/>
+      <div class="p-6">
+        <h1 class="text-2xl font-bold text-gray-800 cursor-pointer ">L'importance de la Sécurité Web</h1>
+        <p class="text-lg text-gray-500 font font-normal">Comprenez pourquoi la sécurité web est cruciale et comment protéger vos applications contre les menaces.</p>
+        <a class="text-salem font-semibold hover:underline" href="#">
+       Lire plus
+      </a>
+      </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="my-8" id="contact">
+    <h2 class="text-3xl font-bold mb-4 text-salem">
+     Contact
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <form>
+      <div class="mb-4">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+        Nom
+       </label>
+       <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" placeholder="Votre nom" type="text"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+        Email
+       </label>
+       <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" placeholder="Votre email" type="email"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+        Message
+       </label>
+       <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Votre message" rows="5"></textarea>
+      </div>
+      <div class="flex items-center justify-between">
+       <button class="bg-salem hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Envoyer
+       </button>
+      </div>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-model shadow mt-8">
+   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <p class="text-salem">
+     © 2024 Mon Portfolio. Tous droits réservés.
+    </p>
+    <div class="space-x-4">
+     <a class="text-salem-800 hover:text-salem" href="#">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+     <a class="text-salem-800 hover:text-salem" href="#">
+      <i class="fab fa-github">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <a class="fixed bottom-4 right-4 bg-salem text-white p-3 rounded-full shadow-lg hover:bg-green-700 transition duration-300" href="#">
+   <i class="fas fa-arrow-up">
+   </i>
+  </a>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuToggle.addEventListener('click', function () {
+        if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
+          mobileMenu.style.display = 'block';
+        } else {
+          mobileMenu.style.display = 'none';
+        }
+      });
+    });
+  </script>
+ </body>
+</html>
